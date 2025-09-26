@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>浜田高校 オープンスクールへようこそ！</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap');
+        body {
+            font-family: 'Kosugi Maru', sans-serif;
+            background: linear-gradient(to bottom right, #f8f0ff, #e6f7ff);
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 2rem;
+        }
+        .card {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border: 2px solid #8B5CF6;
+        }
+        .section-title {
+            color: #8B5CF6;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+        .button {
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .star {
+            animation: twinkle 1.5s infinite ease-in-out;
+            opacity: 0;
+        }
+        .star-delay-1 { animation-delay: 0.5s; }
+        .star-delay-2 { animation-delay: 1s; }
+        @keyframes twinkle {
+            0%, 100% { transform: scale(0.8); opacity: 0; }
+            50% { transform: scale(1.2); opacity: 1; }
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <div class="container">
+        <!-- Header Section -->
+        <header class="text-center mb-10 relative">
+            <div class="absolute inset-0 flex justify-around items-center z-0">
+                <span class="text-yellow-400 text-3xl star star-delay-1">🌟</span>
+                <span class="text-pink-400 text-4xl star">💖</span>
+                <span class="text-blue-400 text-2xl star star-delay-2">✨</span>
+            </div>
+            <h1 class="text-5xl font-bold text-violet-600 mb-2 relative z-10">
+                浜田高校 オープンスクール
+                <span class="block text-2xl text-yellow-500 mt-2">🌈 ようこそ！未来の自分を探しに行こう！ 🌈</span>
+            </h1>
+            <p class="text-lg text-gray-600 mt-4">浜高には、ワクワクする楽しいことがいっぱい待ってるよ！</p>
+            <div class="mt-4 flex justify-center">
+                <img src="https://placehold.co/150x150/FFD1E0/FF69B4?text=Hamako" alt="浜高のキャラクター" class="w-24 h-24 rounded-full shadow-lg border-4 border-white transform hover:scale-110 transition-transform duration-300">
+                <img src="https://placehold.co/150x150/AEEEEE/4682B4?text=浜高生" alt="笑顔の浜田高校生" class="w-24 h-24 rounded-full shadow-lg border-4 border-white -ml-8 transform hover:scale-110 transition-transform duration-300">
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Date & Location Card -->
+            <div class="card border-purple-400 bg-purple-50">
+                <h2 class="text-3xl font-bold section-title mb-4">開催概要</h2>
+                <div class="flex flex-col md:flex-row items-center justify-around text-center md:text-left">
+                    <p class="text-xl text-purple-800 mb-2 md:mb-0">📅 **日付:** 2025年9月19日（金）</p>
+                    <p class="text-xl text-purple-800 mb-2 md:mb-0">⏰ **時間:** 9:00～12:00 (受付 8:30〜)</p>
+                    <p class="text-xl text-purple-800">📍 **場所:** 浜田高校</p>
+                </div>
+                <p class="text-center text-sm text-gray-500 mt-4">※ 中学生と保護者の方が対象だよ！</p>
+            </div>
+
+            <!-- Program Card -->
+            <div class="card border-pink-400 bg-pink-50">
+                <h2 class="text-3xl font-bold section-title mb-4 text-pink-600">当日のプログラム</h2>
+                <ul class="list-disc list-inside space-y-4 text-lg text-gray-700">
+                    <li>
+                        <span class="text-pink-800 font-bold">🏫 学校説明会:</span> 浜高のすごいところ、ぜーんぶ教えます！
+                    </li>
+                    <li>
+                        <span class="text-pink-800 font-bold">✍️ 授業体験:</span> 高校の授業ってどんな感じ？ワクワク体験してみよう！
+                    </li>
+                    <li>
+                        <span class="text-pink-800 font-bold">📣 部活動見学＆体験:</span> 憧れの部活をのぞいてみよう！今回は特に、熱い部活動の様子をたっぷり見学できます。先輩たちが待っているよ！
+                        <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4 mt-4 justify-center">
+                            <img src="https://placehold.co/400x200/FCE4EC/E91E63?text=Cheerleader" alt="チアリーディング部の生徒" class="rounded-lg shadow-md w-full md:w-1/2">
+                            <img src="https://placehold.co/400x200/B2EBF2/00BCD4?text=Baseball+Team" alt="野球部の生徒" class="rounded-lg shadow-md w-full md:w-1/2">
+                        </div>
+                    </li>
+                    <li>
+                        <span class="text-pink-800 font-bold">😊 中学生交流タイム:</span> 同じ中学３年生の参加者と、気軽に話せる時間だよ！みんなで友だちになっちゃおう！
+                    </li>
+                    <li>
+                        <span class="text-pink-800 font-bold">🗺️ 校内ツアー:</span> 広い校内を探検だ！おもしろい発見があるかも！？
+                    </li>
+                    <li>
+                        <span class="text-pink-800 font-bold">🤝 個別相談会:</span> 不安なこと、なんでも聞いてね！先生たちが優しく答えてくれるよ。
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Campus Map Card -->
+            <div class="card border-orange-400 bg-orange-50 text-center">
+                <h2 class="text-3xl font-bold section-title mb-4 text-orange-600">🗺️ 校内マップ</h2>
+                <p class="text-gray-700 text-lg mb-4">
+                    校内のどこに何があるか、事前にチェックしておこう！<br>
+                    受付でパンフレットと一緒にマップももらえるよ。
+                </p>
+                <img src="https://placehold.co/600x400/FFF8E1/E65100?text=浜田高校+校内マップ" alt="浜田高校の校内マップのプレースホルダー画像" class="rounded-lg shadow-lg border-2 border-orange-300 mx-auto">
+            </div>
+
+            <!-- Application Card -->
+            <div class="card border-yellow-400 bg-yellow-50 text-center">
+                <h2 class="text-3xl font-bold section-title mb-4 text-yellow-600">参加申し込みについて</h2>
+                <p class="text-gray-700 text-lg mb-4">
+                    参加するには、事前申し込みが必須だよ！<br>
+                    中学校の先生に申し込んでね！
+                </p>
+                <p class="text-lg font-bold text-yellow-800 mb-4">
+                    <span class="text-red-500 text-2xl">⚡️ 締め切り: 2025年9月5日（金）</span>
+                </p>
+                <p class="text-gray-700 text-sm">
+                    ⚠️ 持ち物は、筆記用具と上履きを忘れずにね！
+                </p>
+                <a href="#" class="button inline-block mt-6 px-8 py-3 bg-gradient-to-r from-yellow-400 to-orange-500 text-white text-xl font-bold rounded-full shadow-lg hover:from-yellow-500 hover:to-orange-600">
+                    詳細をチェック！
+                </a>
+            </div>
+
+            <!-- Contact Card -->
+            <div class="card border-blue-400 bg-blue-50 text-center">
+                <h2 class="text-3xl font-bold section-title mb-4 text-blue-600">何か質問ある？</h2>
+                <p class="text-gray-700 text-lg mb-2">
+                    <span class="font-bold text-blue-800">浜田高校 事務室</span>まで、お気軽に連絡してね！
+                </p>
+                <p class="text-md text-gray-600 mb-2">
+                    〒697-0024 島根県浜田市黒川町３７４９
+                </p>
+                <p class="text-md text-gray-600 mb-2">
+                    📞 **電話番号:** 0855-XX-XXXX
+                </p>
+                <p class="text-md text-gray-600">
+                    📧 **メール:** hamada-hs@example.jp
+                </p>
+            </div>
+        </main>
+
+        <!-- Footer Section -->
+        <footer class="text-center mt-10 text-gray-500 text-sm">
+            <p>© 2025 浜田高校 All Rights Reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
